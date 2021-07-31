@@ -1,0 +1,51 @@
+.app-card{
+    position: relative;
+    width: 98%;
+    padding: 1%;
+}
+.app-card .icon{
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+.app-card .icon img{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.app-card .link{
+    width: 100%;
+    margin:5px 0;
+}
+.app-card .info{
+    display: inline-block;
+    width: 84%;
+}
+.app-card .name{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.app-card .description{
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+    font-weight: 0;
+}
+@media screen and (max-width: 920px) {
+    .app-card .icon{
+        width: 30%;
+        display: inline-block;
+    }
+    .app-card .info{
+        width: 68%;
+        display: inline-block;
+    }
+    .app-card .description{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .app-card .link{
+        font-size: 16px;
+    }
+}

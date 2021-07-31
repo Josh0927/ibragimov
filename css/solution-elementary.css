@@ -1,0 +1,84 @@
+.top{
+    height: 50px;
+    top: 0;left: 0;
+    display: none;
+}
+.menu{
+    top: 0;
+}
+.menubutton{
+    height: 50px;
+    font-size: 40px;
+}
+.navigate{
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+.navigate button{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: #888;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.navigate button:hover{
+    background: #333;
+}
+.content{
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .top{
+        display: flex;
+    }
+    .content{
+        top: 50px;
+    }
+    .navigate{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .navigate button{
+        width: 50%;
+        background: #222;
+    }
+}
+.active{
+    background: #111;
+}
+.content img{
+    width: 48%;
+    display: inline-block;
+    border: 1px dotted #000;
+    transition: 0.25s;
+}
+@media screen and (max-width: 920px) {
+    .content img{
+        width: 100%;
+    }
+}

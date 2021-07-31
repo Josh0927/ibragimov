@@ -1,0 +1,85 @@
+.content{
+    position: absolute;
+    top: 104px;
+    background: rgb(235, 234, 234);
+    width: 72%;
+    left: 14%;
+    transition: 0.25s;
+}
+.title{
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    height: 60px;
+    font-weight: 800;
+    text-indent: 10px;
+    letter-spacing: 1px;
+}
+.text{
+    font-size: 18px;
+    text-align: justify;
+    width: 98%;
+    padding: 0 1%;
+}
+@media screen and (max-width: 1000px) {
+    .content{
+        width: 100%;
+        top: 90px;
+        left: 0;
+    }
+}
+@media screen and (max-width: 920px) {
+    .content{
+        top: 60px;
+    }
+}
+.image{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image .box{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image .box img{
+    width: 100%;
+    transform: scale(1);
+    transition: 0.25s ease-out;
+}
+.image .box img:hover{
+    transform: scale(1.1);
+}
+.readmore{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    background: #aaa;
+    font-family: monospace;
+    width: 20%;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 22px;
+    transition: 0.25s;
+    margin: 1% 0 0 1%;
+}
+.readmore:hover{
+    background: #111;
+    color: #fff;
+}
+@media screen and (max-width: 920px){
+    .readmore{
+        width: 55%;
+    }
+}

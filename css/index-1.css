@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden scroll;
+    font-family: monospace;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+::selection{
+    background: #111;
+    color: #fff;
+}
+.top{
+    position: fixed;
+    top: 0;left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 34px;
+    color: #fff;
+    background: #222;
+    transition: 0.25s;
+    z-index: 5;
+}
+.menubutton{
+    position: fixed;
+    top: 0;right: -5em;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    height: 70px;
+    width: 90px;
+    background: #111;
+    letter-spacing: 1px;
+    opacity: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+    z-index: 8;
+}
+.menubutton:hover{
+    background: rgba(255, 255, 255, 0.25);
+}
+.menubutton:active{
+    background: rgba(255, 255, 255, 0.5);
+    transition: 1ms;
+}
+@media screen and (max-width: 920px){
+    .top{
+        height: 60px;
+        justify-content: flex-start;
+        font-size: 26px;
+        letter-spacing: 1px;
+        text-indent: 10px;
+    }
+    .menubutton{
+        right: 0;
+        opacity: 1;
+        width: 70px;
+        height: 60px;
+    }
+}

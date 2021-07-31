@@ -1,0 +1,109 @@
+html{
+    scroll-behavior: smooth;
+}
+.content{
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.info{
+    margin: auto;
+    width: 98%;
+    padding: 1%;
+    font-size: 20px;
+    text-align-last: left;
+    text-indent: 0;
+    align-items: center;
+}
+.card{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.25s;
+}
+.image{
+    position: relative;
+    width: 98%;
+    padding: 1%;
+    height: 300px;
+    overflow: hidden;
+}
+.image .box img{
+    width: 250px;
+}
+.image .box .bg{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    transform: scale(2);
+}
+.image .box .bg:hover{
+    transform: scale(2);
+}
+.image .box .ico{
+    width: 200px;
+    clip-path: circle();
+}
+.image .box .ico:hover{
+    transform: scale(1);
+}
+.title{
+    height: 80px;
+    transition: 0.25s;
+}
+.description{
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    transition: 0.25s;
+}
+.navigate{
+    color: #111;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+    transition: 0.25s;
+    background: #bbb;
+    width: 98%;
+    padding: 1%;
+    margin: 2px 0;
+    font-weight: 800;
+}
+.navigate:hover{
+    background: #222;
+    color: #fff;
+}
+.description a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+    background: #aaa;
+    text-decoration: none;
+    color: #000;
+    transition: 0.25s;
+}
+.description a:hover{
+    background: #111;
+    color: #fff;
+}
+@media screen and (max-width: 920px) {
+    .title{
+        font-size: 20px;
+        height: 80px;
+    }
+    .image{
+        height: 300px;
+    }
+    .description{
+        width: 100%;
+        display: block;
+        text-align-last: left;
+    }
+}
